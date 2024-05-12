@@ -6,7 +6,7 @@
 
 .dashboard {
     display: grid;
-    grid-template-rows: 180px 1fr;
+    grid-template-rows: 160px 1fr;
     grid-template-columns: 1fr 3fr;
 }
 
@@ -86,7 +86,7 @@ li p {
 }
 
 .header div {
-    border: 2px solid;
+    /* border: 2px solid; */
 }
 
 .header {
@@ -111,9 +111,71 @@ li p {
     grid-template-columns: 40px 400px;
 }
 
+.search-icon {
+    text-align: center;
+    align-self: center;
+}
+
+.search-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+.search-bar {
+    display: grid;
+    align-items: center;
+}
+
+input {
+    border: none;
+    background-color: #e2e8f0;
+    border-radius: 10px;
+    width: 100%;
+    height: 35px;
+}
+
 .notifs-area {
     display: grid;
-    grid-template-columns: 1fr 1fr 3fr;
+    grid-template-columns: 40px 40px 200px;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.notifs-icon img {
+    width: 25px;
+    height: 25px;
+} 
+
+.notifs-icon {
+    justify-self: end;
+}
+
+.profile-pic {
+    justify-self: center;
+}
+
+.notifs-area .cat-wrapper {
+    width: 40px;
+    height: 40px;
+}
+
+.cat-wrapper {
+    border-radius: 50%;
+    background-color: #facc15;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.notifs-area img[alt="cat"] {
+    width: 30px;
+    height: 30px;
+}
+
+.notifs-area .name p {
+    font-size: 1.2rem;
+    font-weight: 600;
 }
 
 .greeting-area {
@@ -121,9 +183,50 @@ li p {
     grid-template-columns: 100px 1fr;
 }
 
+.greeting-area .profile-pic {
+    align-self: center;
+}
+
+.greeting-area .cat-wrapper {
+    width: 60px;
+    height: 60px;
+}
+
+.greeting-area img {
+    width: 50px;
+    height: 50px;
+}
+
+.greeting {
+    align-self: center;
+}
+
+.greeting p:first-child {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.greeting p:last-child {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
 .btn-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 100px);
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+button {
+    height: 35px;
+    border: none;
+    border-radius: 15px;
+    background-color: #1992d2;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
 }
 
 .main-content {
