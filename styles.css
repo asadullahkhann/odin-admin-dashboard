@@ -91,10 +91,6 @@ li p {
     font-weight: 600;
 }
 
-.header div {
-    /* border: 2px solid; */
-}
-
 .header {
     display: grid;
     grid-template-rows: repeat(2, 80px);
@@ -160,17 +156,20 @@ input {
     justify-self: center;
 }
 
-.notifs-area .cat-wrapper {
+.notifs-area .circled-wrapper {
     width: 40px;
     height: 40px;
 }
 
-.cat-wrapper {
+.circled-wrapper {
     border-radius: 50%;
-    background-color: #facc15;
     display: grid;
     justify-content: center;
     align-content: center;
+}
+
+.header .circled-wrapper {
+    background-color: #facc15;
 }
 
 .notifs-area img[alt="cat"] {
@@ -186,13 +185,10 @@ input {
 .greeting-area {
     display: grid;
     grid-template-columns: 100px 1fr;
+    align-items: center;
 }
 
-.greeting-area .profile-pic {
-    align-self: center;
-}
-
-.greeting-area .cat-wrapper {
+.greeting-area .circled-wrapper {
     width: 60px;
     height: 60px;
 }
@@ -200,10 +196,6 @@ input {
 .greeting-area img {
     width: 50px;
     height: 50px;
-}
-
-.greeting {
-    align-self: center;
 }
 
 .greeting p:first-child {
@@ -240,10 +232,6 @@ button {
     grid-template-columns: 1fr 300px;
 }
 
-.projects-column>div {
-    /* border: 2px solid; */
-}
-
 .projects-column {
     display: grid;
     grid-template-rows: 40px repeat(3, 1fr);
@@ -254,7 +242,6 @@ button {
 
 .projects-heading {
     grid-column: 1/3;
-    align-self: flex-end;
 }
 
 .project-card {
@@ -268,7 +255,7 @@ button {
 
 .project-card p, .announcement-card p {
     color: #9e9e9e;
-    padding: 3px 0;
+    padding-top: 3px;
 }
 
 .project-card .btns {
@@ -284,10 +271,6 @@ button {
     height: 30px;
 }
 
-.last-column div {
-    /* border: 2px solid; */
-}
-
 .last-column {
     display: grid;
     grid-template-rows: 40px 1fr 40px 300px;
@@ -295,7 +278,7 @@ button {
     padding: 15px;
 }
 
-.announcements-heading, .trending-heading {
+.projects-heading, .announcements-heading, .trending-heading {
     align-self: flex-end;
 }
 
@@ -331,17 +314,12 @@ button {
     gap: 10px;
 }
 
-.circle {
-    border: none;
-    border-radius: 50%;
+.trending-card .circled-wrapper {
     width: 50px;
     height: 50px;
-    display: grid;
-    justify-content: center;
-    align-content: center;
 }
 
-.circle img {
+.trending-card img {
     width: 35px;
     height: 35px;
 }
@@ -352,9 +330,6 @@ button {
 
 .circle-2 {
     background-color: #facc15;
-    display: grid;
-    justify-content: center;
-    align-content: center;
 }
 
 .circle-3 {
