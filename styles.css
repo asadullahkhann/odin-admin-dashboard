@@ -94,6 +94,7 @@ li p {
 .header {
     display: grid;
     grid-template-rows: repeat(2, 80px);
+    padding: 0 15px;
 }
 
 .header-row {
