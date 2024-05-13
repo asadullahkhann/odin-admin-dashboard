@@ -287,12 +287,12 @@ button {
     display: grid;
     gap: 10px;
     background-color: #fff;
-    padding: 15px;
     border-radius: 10px;
 }
 
 .announcement-card {
     grid-template-rows: repeat(3, 1fr);
+    padding: 25px;
 }
 
 .announcement-card>div {
@@ -306,6 +306,7 @@ button {
 
 .trending-card {
     grid-template-rows: repeat(4, 1fr);
+    padding: 15px;
 }
 
 .trending-card>div {
