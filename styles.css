@@ -285,7 +285,6 @@ button {
 
 .announcement-card, .trending-card {
     display: grid;
-    gap: 10px;
     background-color: #fff;
     border-radius: 10px;
 }
